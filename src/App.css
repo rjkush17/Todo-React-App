@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@500&display=swap');
+
+.App {
+  text-align: center;
+  box-sizing: border-box;
+}
+:root{
+  --primary-color: rgb(78, 188, 78);
+}
+.todoapp{
+  width: 325px;
+  margin: 10vh auto 0 auto;
+  background-color: rgb(39, 38, 38);
+  border: var(--primary-color) solid 4px;
+  color: var(--primary-color);
+  min-height: 40vh;
+  border-radius: 10px;
+  font-family: 'Mukta', sans-serif;
+
+  & h2{
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  & .input{
+    border: var(--primary-color) solid 1px;
+    height: 30px;
+    margin: 5px;
+    margin-right: 0;
+  }
+  & .add-btn{
+    height: 34px;
+    width: 35px;
+    border: var(--primary-color) solid 1px;
+    margin: 5px;
+    margin-bottom: 0;
+
+    & .plus-icon{
+      font-size: 20px;
+    }
+  }
+  & .list-items{
+    padding: 5px;
+    font-size: 20px;
+    margin: 5vh  12px 10px 12px;
+    
+   
+
+    & .list-item{
+      max-height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: wheat;
+      padding-left: 10px;
+      margin-bottom: 10px;
+     padding-top: 0d;
+
+     & .delete-btn{
+      background-color: transparent;
+      border: transparent 0px ;
+     } & .trash-icon{
+      font-size: 20px;
+      margin-right: 10px;
+     }
+    }
+
+    & .delete-all-btn{
+      height: 40px;
+      margin-top: 15px ;
+      font-family: 'Mukta', sans-serif;
+      background-color: var(--primary-color);
+      color: white;
+      border: transparent 0px ;
+    }
+  }
+}
